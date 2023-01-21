@@ -46,7 +46,7 @@ Resources:
       KeyName: !Ref 'KeyName'
       ImageId: !Ref 'LatestAmiId'
   InstanceSecurityGroup:
-    Type: AWS::EC2::SecurityGroup
+    Type: AWS::EC2::Securgit ityGroup
     Properties:
       GroupDescription: Enable SSH access via port 22
       SecurityGroupIngress:
@@ -67,3 +67,4 @@ Outputs:
   PublicIP:
     Description: Public IP address of the newly created EC2 instance
     Value: !GetAtt [EC2Instance, PublicIp]
+    Description: Added to new branch
